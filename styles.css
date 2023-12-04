@@ -1,0 +1,62 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.calculator {
+    border: 2px solid #d4d4d4; /* Borde más claro */
+    border-radius: 10px;
+    width: 300px;
+    background-color: #f0f0f0; /* Fondo ligeramente más oscuro */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: calc(100% - 35px);
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1.8em;
+    text-align: right;
+    background-color: #e6e6e6; /* Fondo del display */
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.keys button:nth-child(13) {
+    grid-column: span 3;
+}
+
+.keys button:nth-child(16) {
+    grid-column: span 2;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d4d4d4; /* Fondo de los botones */
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    background-color: #b8b8b8; /* Cambio de color al presionar */
+}
+
+.operator-btn {
+    background-color: #ff8c00; /* Color naranja para los botones de operación */
+    color: #fff; /* Texto blanco para los botones de operación */
+}
