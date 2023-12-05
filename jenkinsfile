@@ -3,11 +3,17 @@ pipeline {
 
     stages {
         stage('One'){
-            echo 'Primer paso'
+            steps{
+                echo 'Primer paso'
+            }
+            
         }
 
         stage('Two'){
-            echo 'Procced?'
+            steps{
+                echo 'Procced?'
+            }
+            
         }
 
         stage('One'){
