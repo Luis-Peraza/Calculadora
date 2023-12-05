@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('One'){
+            echo 'Primer paso'
+        }
+
+        stage('Two'){
+            echo 'Procced?'
+        }
+
+        stage('One'){
+            when{
+                not{
+                    branch"Master"
+                }
+            }
+            steps {
+                echo "hello"
+            }
+        }
+        
+        
+    }
+}
